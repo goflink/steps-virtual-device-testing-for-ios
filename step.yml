@@ -140,3 +140,8 @@ outputs:
       title: "Downloaded files directory"
       description: "The directory containing the downloaded files if you have set `download_test_results` inputs above."
       summary: "The directory containing the downloaded files if you have set `download_test_results` inputs above."
+  - VDTESTING_IS_TEST_RUN_SUCCESSFUL:
+    opts:
+      title: "The result of the Virtual Device Tests"
+      description: "Shows if the tests passed or not. 'true' or 'false'"
+      summary: "Shows if the tests passed or not. 'true' or 'false'"

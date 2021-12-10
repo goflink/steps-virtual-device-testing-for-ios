@@ -452,6 +452,15 @@ func main() {
 		}
 	}
 
+	fmt.Println()
+	log.Infof("Exporting test run result")
+	if err := tools.ExportEnvironmentWithEnvman("VDTESTING_IS_TEST_RUN_SUCCESSFUL", strconv.FormatBool(successful)); err != nil {
+		log.Warnf("Failed to export environment (VDTESTING_IS_TEST_RUN_SUCCESSFUL), error: %s", err)
+	} else {
+		log.Printf("The test run result is exported to the VDTESTING_IS_TEST_RUN_SUCCESSFUL environment variable.")
+	}
+	log.Donef("=> Test run result exported")
+
 	if !successful {
 		os.Exit(1)
 	}
