@@ -1,0 +1,19 @@
+schema-version: v2.1
+dd-service: steps-virtual-device-testing-for-ios
+lifecycle: production
+# TODO: complete this information
+#tier: non-critical
+#team: ...
+# TODO: add the appropriate contacts
+#contacts:
+#  - type: slack
+#    contact: https://goflink.slack.com/<CHANNEL-ID>
+#  - type: email
+#    contact: platform@goflink.com
+links:
+  - name: Source Code
+    type: repo
+    url: https://github.com/goflink/steps-virtual-device-testing-for-ios
+tags:
+  - service:steps-virtual-device-testing-for-ios
+  
